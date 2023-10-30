@@ -3,11 +3,27 @@
 		<header>
 			<MainHeaderSVG class="main-header-svg" />
 		</header>
+		<AboutText>
+			<h1>We make
+				<a href="/en/live/" class="blue">Live</a>,
+				<a href="/en/push/" class="blue">Push</a> and
+				<a href="/en/link/" class="blue">Link</a> — unique
+				software and hardware for music creation and performance. With these products, our community of users creates
+				amazing things.
+			</h1>
+			<p>
+				Ableton was founded in 1999 and released the first version of Live in 2001. Our products are used by a community
+				of
+				dedicated musicians, sound designers, and artists from across the world.
+			</p>
+
+		</AboutText>
 	</div>
 </template>
 
 <script setup lang="ts">
 import MainHeaderSVG from '@/components/header/MainHeaderSVG.vue'
+import AboutText from '@/components/AboutText.vue'
 </script>
 
 <style scoped>
