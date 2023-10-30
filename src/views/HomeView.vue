@@ -1,11 +1,9 @@
 <template>
-	<main>
-		<div>
-			<header class="main-header">
-				<MainHeaderSVG class="main-header-svg" />
-			</header>
-		</div>
-	</main>
+	<div class="page">
+		<header>
+			<MainHeaderSVG class="main-header-svg" />
+		</header>
+	</div>
 </template>
 
 <script setup lang="ts">
@@ -13,18 +11,22 @@ import MainHeaderSVG from '@/components/header/MainHeaderSVG.vue'
 </script>
 
 <style scoped>
-.main-header {
-	margin: auto;
-	width: 80%;
-	min-height: 500px;
-	background-image: url('@/assets/header.jpg');
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
+@media screen and (min-width: 100em) {
+	.page {
+		width: 1600px;
+	}
 }
 
 header {
+	display: block;
+	background-image: url('@/assets/header.jpg');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	min-height: calc(100vh - 120px);
+	margin: 0px 133px;
 }
 </style>

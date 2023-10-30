@@ -3,10 +3,10 @@
 		<div class="w-100">
 			<ul>
 				<li v-for="item in navItems" :key="item.label">
-					<RouterLink :to="item.link">{{ item.label }}</RouterLink>
+					<RouterLink :to="item.link" :class="item.class">{{ item.label }}</RouterLink>
 				</li>
 				<li class="seperate-to-right">
-					<RouterLink to="/try">Try Live for free</RouterLink>
+					<RouterLink to="/try" class="blue">Try Live for free</RouterLink>
 				</li>
 				<li>
 					<RouterLink to="/register">Log in or register</RouterLink>
@@ -14,6 +14,7 @@
 			</ul>
 		</div>
 	</nav>
+	<hr />
 </template>
 
 <script setup lang="ts">
@@ -27,7 +28,7 @@ const navItems = [
 	{ label: "Shop", link: "/shop" },
 	{ label: "Packs", link: "/packs" },
 	{ label: "Help", link: "/help" },
-	{ label: "More +", link: "/more" },
+	{ label: "More +", link: "/more", class: ["orange"] },
 ]
 </script>
 
@@ -54,7 +55,6 @@ ul {
 
 li {
 	padding: auto;
-	margin: 12px;
 	list-style: none;
 	margin-left: 41px;
 }
