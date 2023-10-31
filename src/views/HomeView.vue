@@ -16,14 +16,15 @@
 				of
 				dedicated musicians, sound designers, and artists from across the world.
 			</p>
-
 		</AboutText>
+		<AboutProduct />
 	</div>
 </template>
 
 <script setup lang="ts">
 import MainHeaderSVG from '@/components/header/MainHeaderSVG.vue'
 import AboutText from '@/components/AboutText.vue'
+import AboutProduct from '@/components/AboutProduct.vue'
 </script>
 
 <style scoped>
